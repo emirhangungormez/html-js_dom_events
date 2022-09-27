@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+
+    <div class="hard-header">
+        <h3 class="cart-title h1" id="title">Emir</h3>
+    </div>
+
+    <ul id="task-list">
+        <li>
+            Görev 1
+        </li>
+
+        <li>
+            Görev 2
+        </li>
+
+        <li>
+            Görev 3
+        </li>
+
+    </ul>
+
+    <script>
+        let sonuc;
+
+        // elemanlara console'dan ulasmak icin...
+        sonuc = document.getElementById("title");
+        sonuc = document.getElementById("title").id; // title'in id'si
+        sonuc = document.getElementById("title").className; // title'da bulunan class
+        sonuc = document.getElementById("title").classList; // title'da bulunan class listesi
+
+
+        document.getElementById("title").style.fontSize = "30px";
+        document.getElementById("title").style.color = "red";
+        // document.getElementById("title").style.display = "none";
+
+        document.getElementById("title").innerText = "Merve";
+        document.getElementById("title").innerHTML = "<p>To Do List</p>";
+
+        sonuc = document.querySelector("#title");
+        sonuc = document.querySelector(".card-header");
+        sonuc = document.querySelector("li");
+        sonuc = document.querySelector("li:last-child");
+        
+
+        console.log(sonuc);
+    </script>
+    
+</body>
+</html>
